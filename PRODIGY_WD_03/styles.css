@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)),
+        url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Less transparent for better readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Slightly narrower for better proportions */
+}
+
+h1 {
+    color: #333;
+    margin: 0 0 20px 0; /* Simplified margin */
+    font-size: 2em; /* Larger heading */
+}
+
+.game-mode {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 20px 0; /* Consistent bottom margin */
+}
+
+.game-mode button {
+    padding: 10px 15px; /* Slightly larger padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    flex: 1; /* Make buttons equal width */
+    max-width: 150px; /* Limit maximum width */
+}
+
+.game-mode button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+    min-height: 1.5em; /* Ensure consistent height */
+    color: #333;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between; /* Better distribution */
+    margin: 15px auto; /* Centered with margin */
+    width: 100%;
+    max-width: 350px; /* Match board width */
+}
+
+.score {
+    padding: 10px;
+    border-radius: 5px;
+    width: 48%; /* Nearly half width */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1em;
+}
+
+#score-x {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+#score-o {
+    color: #e74c3c;
+    background-color: #f9ebea;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1; /* Perfect square */
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cell {
+    background-color: white;
+    border: 2px solid rgba(51, 51, 51, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em; /* Relative size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    aspect-ratio: 1/1; /* Perfect square cells */
+}
+
+.cell.x { color: #FF5252; }
+.cell.o { color: #2196F3; }
+
+.controls {
+    margin-top: 20px;
+}
+
+#reset-btn {
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #45a049;
+}
+
+/* Winning line styles */
+.winning-line {
+    position: absolute;
+    background-color: #ff5722;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Position adjustments for winning lines */
+.horizontal-line {
+    height: 5px;
+    transform: translateY(-50%);
+}
+
+.vertical-line {
+    width: 5px;
+    transform: translateX(-50%);
+}
+
+.diagonal-line-1 {
+    width: 140%;
+    height: 5px;
+    transform: rotate(-45deg) translateX(-10%);
+}
+
+.diagonal-line-2 {
+    width: 140%;
+    height: 5px;
+    transform: rotate(45deg) translateX(-10%);
+}
+/* Add these to your existing CSS */
+.winning-cell {
+    background-color: rgba(76, 175, 80, 0.3); /* Semi-transparent green */
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.winning-status {
+    color: #2e7d32; /* Dark green */
+    text-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+    animation: pulse 0.5s ease 2;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Herbal Teas | Nature's Remedy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Nature's Remedy Logo">
+                <span>Nature's Remedy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#types">Tea Types</a></li>
+                <li><a href="#brewing">Brewing Tips</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg')">
+        <div class="hero-content">
+            <h1>Discover Nature's Healing Power</h1>
+            <p>Premium organic herbal teas crafted for wellness and tranquility</p>
+            <a href="#products" class="cta-button">Explore Our Teas</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="featured-products">
+        <h2>Our Signature Blends</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-placeholder"></div>
+                <h3>Organic Green Tea</h3>
+                <p>Antioxidant-rich with a delicate, refreshing flavor</p>
+                <span class="price">₹975</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image-placeholder"></div>
+                <h3>Chamomile Bliss</h3>
+                <p>Calming and soothing, perfect for relaxation</p>
+                <span class="price">₹1989</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image-placeholder"></div>
+                <h3>Peppermint Refresh</h3>
+                <p>Invigorating and digestive-friendly</p>
+                <span class="price">₹1292</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits -->
+    <section id="benefits" class="health-benefits">
+        <h2>Tea Benefits</h2>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <i class="fas fa-heart"></i>
+                <h3>Heart Health</h3>
+                <p>Many herbal teas support cardiovascular health and circulation</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-brain"></i>
+                <h3>Mental Clarity</h3>
+                <p>Enhance focus and reduce stress naturally</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Detoxification</h3>
+                <p>Natural cleansing properties to support your body</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-moon"></i>
+                <h3>Better Sleep</h3>
+                <p>Calming blends to promote restful sleep</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tea Types -->
+    <section id="types" class="tea-types">
+        <h2>Explore Tea Varieties</h2>
+        <div class="type-tabs">
+            <button class="tab-button active" data-tab="green">Green Tea</button>
+            <button class="tab-button" data-tab="herbal">Herbal Tea</button>
+            <button class="tab-button" data-tab="black">Black Tea</button>
+            <button class="tab-button" data-tab="white">White Tea</button>
+        </div>
+        <div class="tab-content active" id="green">
+            <div class="content-left">
+                <h3>Green Tea</h3>
+                <p>Known for its high antioxidant content and metabolism-boosting properties. Our organic green tea is sourced from the finest tea gardens and gently processed to preserve its natural benefits.</p>
+                <ul>
+                    <li>Rich in EGCG antioxidants</li>
+                    <li>May support weight management</li>
+                    <li>Gentle caffeine content</li>
+                    <li>Fresh, grassy flavor profile</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <div class="tea-image-placeholder"></div>
+            </div>
+        </div>
+        <div class="tab-content" id="herbal">
+            <div class="content-left">
+                <h3>Herbal Tea</h3>
+                <p>Caffeine-free infusions made from herbs, flowers, and spices. Each blend is crafted for specific wellness benefits and delightful flavors.</p>
+                <ul>
+                    <li>Naturally caffeine-free</li>
+                    <li>Wide variety of flavors</li>
+                    <li>Targeted wellness benefits</li>
+                    <li>Perfect any time of day</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <div class="tea-image-placeholder"></div>
+            </div>
+        </div>
+        <div class="tab-content" id="black">
+            <div class="content-left">
+                <h3>Black Tea</h3>
+                <p>Fully oxidized leaves produce a robust flavor and higher caffeine content. Our black teas are rich and satisfying.</p>
+                <ul>
+                    <li>Bold, full-bodied flavor</li>
+                    <li>Higher caffeine content</li>
+                    <li>Rich in theaflavins</li>
+                    <li>Great with milk or lemon</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <div class="tea-image-placeholder"></div>
+            </div>
+        </div>
+        <div class="tab-content" id="white">
+            <div class="content-left">
+                <h3>White Tea</h3>
+                <p>The least processed tea with delicate flavors and subtle sweetness. Hand-picked young leaves and buds.</p>
+                <ul>
+                    <li>Delicate, subtle flavors</li>
+                    <li>Highest antioxidant levels</li>
+                    <li>Lowest caffeine content</li>
+                    <li>Rare and precious</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <div class="tea-image-placeholder"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brewing Tips -->
+    <section id="brewing" class="brewing-tips">
+        <h2>Perfect Brewing Guide</h2>
+        <div class="brewing-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Quality Water</h3>
+                <p>Start with fresh, filtered water for the best flavor</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Proper Temperature</h3>
+                <p>Different teas require specific water temperatures</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Measure Carefully</h3>
+                <p>Use about 1 teaspoon per 8oz cup</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Steep Time</h3>
+                <p>Follow recommended steeping times for each tea type</p>
+            </div>
+        </div>
+        <div class="temperature-chart">
+            <h3>Ideal Brewing Temperatures</h3>
+            <ul>
+                <li><strong>White Tea:</strong> 160-180°F (71-82°C)</li>
+                <li><strong>Green Tea:</strong> 175-185°F (79-85°C)</li>
+                <li><strong>Oolong Tea:</strong> 185-205°F (85-96°C)</li>
+                <li><strong>Black Tea:</strong> 200-212°F (93-100°C)</li>
+                <li><strong>Herbal Tea:</strong> 205-212°F (96-100°C)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+        <h2>Shop Our Collections</h2>
+        <div class="shop-categories">
+            <div class="category-card">
+                <div class="category-image-placeholder"></div>
+                <div class="category-overlay">
+                    <h3>Wellness Blends</h3>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image-placeholder"></div>
+                <div class="category-overlay">
+                    <h3>Single Origin</h3>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image-placeholder"></div>
+                <div class="category-overlay">
+                    <h3>Seasonal Special</h3>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image-placeholder"></div>
+                <div class="category-overlay">
+                    <h3>Gift Sets</h3>
+                    <a href="#" class="shop-now">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">Are your teas really organic?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Yes! All our teas are certified organic by USDA and EU organic standards. We work directly with organic tea farmers who use sustainable growing practices without synthetic pesticides or fertilizers.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How should I store my tea?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>For best freshness, store tea in an airtight container away from light, heat, and moisture. Avoid storing near strong-smelling foods as tea can absorb odors. Properly stored, most teas will maintain optimal flavor for 6-12 months.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer caffeine-free options?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Absolutely! Our herbal teas (like chamomile, peppermint, and rooibos) are naturally caffeine-free. We also offer decaffeinated versions of some traditional teas using the natural CO2 decaffeination process.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What's your shipping policy?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>We offer free shipping on orders over $50. Most orders ship within 1-2 business days and arrive within 3-5 business days in the US. International shipping is available with varying delivery times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>Join Our Tea Community</h3>
+            <p>Subscribe to receive exclusive offers, tea tips, and wellness insights</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Nature's Remedy</h4>
+                <p>Premium organic teas for health and happiness. Sustainably sourced, mindfully crafted.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#types">Tea Types</a></li>
+                    <li><a href="#brewing">Brewing Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tea Garden Way, Portland, OR 97201</li>
+                    <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@naturesremedy.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nature's Remedy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

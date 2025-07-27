@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-container">
+            <div class="outer-ring">
+                <div class="inner-ring">
+                    <div class="time-display">
+                        <span id="hours">00</span>
+                        <span class="separator">:</span>
+                        <span id="minutes">00</span>
+                        <span class="separator">:</span>
+                        <span id="seconds">00</span>
+                        <span class="separator">.</span>
+                        <span id="milliseconds">00</span>
+                    </div>
+                </div>
+                <div class="progress-ring">
+                    <svg class="ring-svg" viewBox="0 0 100 100">
+                        <circle class="ring-circle-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="ring-circle" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="lapBtn" class="btn lap-btn">Lap</button>
+                <button id="startStopBtn" class="btn start-btn">Start</button>
+                <button id="resetBtn" class="btn reset-btn">Reset</button>
+            </div>
+            
+            <div class="laps-container">
+                <h3>Laps</h3>
+                <div id="lapsList" class="laps-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
